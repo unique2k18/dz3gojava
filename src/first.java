@@ -4,8 +4,15 @@ public class first {
         System.out.println("Кол-во элементов в массиве ar1 - " + ar1.length);
         System.out.println("Элементы массива ar1 - " );
         for (int i = 0; i<ar1.length; i++) {
-            System.out.println(ar1[i] + ", ");
+            System.out.print(ar1[i] + ", ");
         }
+        System.out.println();
+        double max = Double.MIN_VALUE;
+        for (int i = 0; i < ar1.length; i++) {
+            max = Math.max(max, ar1[i]);
+        }
+        System.out.println("Максимальный элемент в массиве ar1: " + max);
+
 
     }
 
