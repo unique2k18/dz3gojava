@@ -12,6 +12,13 @@ public class first {
             max = Math.max(max, ar1[i]);
         }
         System.out.println("Максимальный элемент в массиве ar1: " + max);
+        System.out.println();
+        double min = Double.MAX_VALUE;
+        for (int i = 0; i < ar1.length; i++) {
+            min = Math.min(min, ar1[i]);
+        }
+        System.out.println("Минимальный элемент массива ar1: " + min);
+        
 
 
     }
