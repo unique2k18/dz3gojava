@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class first {
     public static void main(String[] args) {
         double [] ar1 = {1.15, 2.67, 64.5634, 6.735, 897};
@@ -18,7 +20,23 @@ public class first {
             min = Math.min(min, ar1[i]);
         }
         System.out.println("Минимальный элемент массива ar1: " + min);
-        
+
+        for(int i=0; i < ar1.length; i++){
+            for(int j=1; j < (ar1.length-i); j++){
+                if(ar1[j-1] > ar1[j]){
+                     double temp = ar1[j-1];
+                    ar1[j-1] = ar1[j];
+                    ar1[j] = temp;
+                }
+
+            }
+        }
+        System.out.println("Массив после сортировки - ");
+        for(int i=0; i < ar1.length; i++){
+            System.out.print(ar1[i] + " ");
+        }
+
+
 
 
     }
